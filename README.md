@@ -17,7 +17,7 @@ cd C:\Sysmon
 ```
 https://raw.githubusercontent.com/Seceo-Knight/Seceoknight-SysmonConfig/refs/heads/main/sysmonconfig-export.xml -OutFile "config.xml"
 ```
-7. Installing Sysmon with downloade config follow,
+7. Installing Sysmon with downloade config follow :
 ```
 Sysmon64.exe -accepteula -i config.xml
 ```
