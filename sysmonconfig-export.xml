@@ -1196,36 +1196,5 @@
 			Sysinternals forum or over Twitter (@markrussinovich)."-->
 		<!--Cannot be filtered.-->
 
-	<!-- =========================                 -->
-    <!-- DLP RULES (ADD BELOW EXISTING RULEGROUPS) -->
-    <!-- =========================                 -->
-
-	<RuleGroup name="DLP-FileCreate" groupRelation="or">
-  		<FileCreate onmatch="include">
-
-    		<TargetFilename condition="begin with">C:\Users\</TargetFilename>
-
-    		<TargetFilename condition="begin with">D:\</TargetFilename>
-    		<TargetFilename condition="begin with">E:\</TargetFilename>
-    		<TargetFilename condition="begin with">F:\</TargetFilename>
-    		<TargetFilename condition="begin with">G:\</TargetFilename>
-    		<TargetFilename condition="begin with">H:\</TargetFilename>
-
-  		</FileCreate>
-	</RuleGroup>
-
-	<RuleGroup name="DLP-Noise-Reduction" groupRelation="or">
-  		<FileCreate onmatch="exclude">
-
-    		<TargetFilename condition="end with">.tmp</TargetFilename>
-    		<TargetFilename condition="end with">.log</TargetFilename>
-    		<TargetFilename condition="end with">.dat</TargetFilename>
-
-    		<TargetFilename condition="contains">\AppData\Local\Temp\</TargetFilename>
-    		<TargetFilename condition="contains">\Windows\</TargetFilename>
-    		<TargetFilename condition="contains">\ProgramData\</TargetFilename>
-
-  		</FileCreate>
-	</RuleGroup>
 	</EventFiltering>
 </Sysmon>
