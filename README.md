@@ -28,6 +28,12 @@ Sysmon64.exe -accepteula -i config.xml
 <log_format>eventchannel</log_format>
 </localfile>
 ```
-
+### Add the following block to the configuration file to enable Windows Defender log collection:
+```
+<localfile>
+  <location>Microsoft-Windows-Windows Defender/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
+```
 Restart the Agent
 
