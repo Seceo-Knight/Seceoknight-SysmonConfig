@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/Seceo-Knight/Seceoknight-SysmonConfig/refs/hea
 ```
 7. Installing Sysmon with downloade config follow :
 ```
-Sysmon64.exe -accepteula -i config.xml
+.\Sysmon.exe -accepteula -i .\config.xml
 ```
 ### Configure Seceoknight agent to monitor Sysmon events under ossec.conf
 ```
