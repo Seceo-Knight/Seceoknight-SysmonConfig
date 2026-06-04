@@ -23,7 +23,7 @@ https://raw.githubusercontent.com/Seceo-Knight/Seceoknight-SysmonConfig/refs/hea
 ```
 OR
 ```
-\Sysmon64.exe -accepteula -i config.xml
+.\Sysmon64.exe -accepteula -i config.xml
 ```
 ### Configure Seceoknight agent to monitor Sysmon events under ossec.conf
 ```
